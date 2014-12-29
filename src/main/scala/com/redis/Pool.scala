@@ -74,6 +74,7 @@ class ConcurrentObjectPool[T](factory: PoolableObjectFactory[T],
   })
 
   poolSettings.maxIdle(maxIdle)
+
   val pool : AbstractPool[T] = poolSettings.pool().asInstanceOf
 
   override def borrowObject(): T = {
