@@ -61,7 +61,8 @@ trait RedisCommand extends Redis with Operations
   with SortedSetOperations
   with HashOperations
   with EvalOperations
-  with PubOperations {
+  with PubOperations
+  with HyperLogLogOperations {
 
   val database: Int = 0
   val secret: Option[Any] = None

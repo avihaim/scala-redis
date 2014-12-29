@@ -28,6 +28,9 @@ trait HashOperations { self: Redis =>
   def hincrby(key: Any, field: Any, value: Int)(implicit format: Format): Option[Long] =
     send("HINCRBY", List(key, field, value))(asLong)
   
+  def hincrbyfloat(key: Any, field: Any, value: Float)(implicit format: Format): Option[Float] =
+    send("HINCRBYFLOAT", List(key, field, value))(asBulk).map(_.toFloat)
+  
   def hexists(key: Any, field: Any)(implicit format: Format): Boolean =
     send("HEXISTS", List(key, field))(asBoolean)
   
@@ -45,4 +48,9 @@ trait HashOperations { self: Redis =>
   
   def hgetall[K,V](key: Any)(implicit format: Format, parseK: Parse[K], parseV: Parse[V]): Option[Map[K,V]] =
     send("HGETALL", List(key))(asListPairs[K,V].map(_.flatten.toMap))
+
+  // HSCAN
+  // Incrementally iterate hash fields and associated values (since 2.8)
+  def hscan[A](key: Any, cursor: Int, pattern: Any = "*", count: Int = 10)(implicit format: Format, parse: Parse[A]): Option[(Option[Int], Option[List[Option[A]]])] =
+    send("HSCAN", key :: cursor :: ((x: List[Any]) => if(pattern == "*") x else "match" :: pattern :: x)(if(count == 10) Nil else List("count", count)))(asPair)
 }

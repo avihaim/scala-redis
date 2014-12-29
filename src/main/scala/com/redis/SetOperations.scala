@@ -85,4 +85,9 @@ trait SetOperations { self: Redis =>
   // Return multiple random elements from a Set (since 2.6)
   def srandmember[A](key: Any, count: Int)(implicit format: Format, parse: Parse[A]): Option[List[Option[A]]] =
     send("SRANDMEMBER", List(key, count))(asList)
+
+  // SSCAN
+  // Incrementally iterate Set elements (since 2.8)
+  def sscan[A](key: Any, cursor: Int, pattern: Any = "*", count: Int = 10)(implicit format: Format, parse: Parse[A]): Option[(Option[Int], Option[List[Option[A]]])] =
+    send("SSCAN", key :: cursor :: ((x: List[Any]) => if(pattern == "*") x else "match" :: pattern :: x)(if(count == 10) Nil else List("count", count)))(asPair)
 }

@@ -16,7 +16,7 @@ trait EvalOperations { self: Redis =>
     send("EVALSHA", argsForEval(shahash, keys, args))(asList[A])
     
   def evalSHA[A](shahash: String, keys: List[Any], args: List[Any])(implicit format: Format, parse: Parse[A]): Option[A] =
-    send("EVALSHA", argsForEval(shahash, keys, args))(asBulk)
+    send("EVALSHA", argsForEval(shahash, keys, args))(asAny.asInstanceOf[Option[A]])
   
   def scriptLoad(luaCode: String): Option[String] = {
     send("SCRIPT", List("LOAD", luaCode))(asBulk)

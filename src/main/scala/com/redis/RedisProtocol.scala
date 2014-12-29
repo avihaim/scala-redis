@@ -40,6 +40,7 @@ private [redis] trait Reply {
   type Reply[T] = PartialFunction[(Char, Array[Byte]), T]
   type SingleReply = Reply[Option[Array[Byte]]]
   type MultiReply = Reply[Option[List[Option[Array[Byte]]]]]
+  type PairReply = Reply[Option[(Option[Array[Byte]], Option[List[Option[Array[Byte]]]])]]
 
   def readLine: Array[Byte]
   def readCounted(c: Int): Array[Byte]
@@ -77,6 +78,16 @@ private [redis] trait Reply {
         case -1 => None
         case n => Some(List.fill(n)(receive(bulkReply orElse singleLineReply)))
       }
+  }
+
+  val pairBulkReply: PairReply = {
+    case (MULTI, str) => {
+      Parsers.parseInt(str) match {
+        case 2 => Some((receive(bulkReply orElse singleLineReply), 
+          receive(multiBulkReply)))
+        case _ => None
+      }
+    }
   }
 
   def execReply(handlers: Seq[() => Any]): PartialFunction[(Char, Array[Byte]), Option[List[Any]]] = {
@@ -150,6 +161,11 @@ private [redis] trait R extends Reply {
   def asExec(handlers: Seq[() => Any]): Option[List[Any]] = receive(execReply(handlers))
 
   def asSet[T: Parse]: Option[Set[Option[T]]] = asList map (_.toSet)
+
+  def asPair[T](implicit parse: Parse[T]): Option[(Option[Int], Option[List[Option[T]]])] = receive(pairBulkReply) match {
+    case Some((single, multi)) => Some(((single map Parsers.parseInt), multi.map(_.map(_.map(parse)))))
+    case _ => None
+  }
 
   def asAny = receive(integerReply orElse singleLineReply orElse bulkReply orElse multiBulkReply)
 }

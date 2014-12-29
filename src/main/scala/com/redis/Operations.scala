@@ -161,4 +161,9 @@ trait Operations { self: Redis =>
   // to persistent (a key that will never expire as no timeout is associated).
   def persist(key: Any)(implicit format: Format): Boolean =
     send("PERSIST", List(key))(asBoolean)
+
+  // SCAN
+  // Incrementally iterate the keys space (since 2.8)
+  def scan[A](cursor: Int, pattern: Any = "*", count: Int = 10)(implicit format: Format, parse: Parse[A]): Option[(Option[Int], Option[List[Option[A]]])] =
+    send("SCAN", cursor :: ((x: List[Any]) => if(pattern == "*") x else "match" :: pattern :: x)(if(count == 10) Nil else List("count", count)))(asPair)
 }

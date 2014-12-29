@@ -8,12 +8,12 @@ object ScalaRedisProject extends Build
 
   lazy val commonSettings: Seq[Setting[_]] = Seq(
     organization := "net.debasishg",
-    version := "2.13",
-    scalaVersion := "2.11.1",
-    crossScalaVersions := Seq("2.11.1", "2.10.4"),
+    version := "2.14",
+    scalaVersion := "2.11.2",
+    crossScalaVersions := Seq("2.11.2", "2.10.4"),
 
     scalacOptions in Compile ++= Seq( "-unchecked", "-feature", "-language:postfixOps", "-deprecation" ),
-    
+
     resolvers ++= Seq(akkaRepo)
   )
 
@@ -25,7 +25,7 @@ object ScalaRedisProject extends Build
       "org.slf4j"         %  "slf4j-api"               % "1.7.2",
       "org.slf4j"         %  "slf4j-log4j12"           % "1.7.2"      % "provided",
       "log4j"             %  "log4j"                   % "1.2.16"     % "provided",
-      "com.typesafe.akka" %% "akka-actor"              % "2.3.2",
+      "com.typesafe.akka" %% "akka-actor"              % "2.3.6",
       "junit"             %  "junit"                   % "4.8.1"      % "test",
       "org.scalatest"     %%  "scalatest"              % "2.1.3" % "test"),
 
