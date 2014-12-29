@@ -21,6 +21,7 @@ object ScalaRedisProject extends Build
     name := "RedisClient",
     libraryDependencies := Seq(
       "commons-pool"      %  "commons-pool"            % "1.6",
+      "nf.fr.eraasoft"      %  "objectpool"            % "1.1.2",
       "org.slf4j"         %  "slf4j-api"               % "1.7.2",
       "org.slf4j"         %  "slf4j-log4j12"           % "1.7.2"      % "provided",
       "log4j"             %  "log4j"                   % "1.2.16"     % "provided",
