@@ -2,6 +2,7 @@ package com.redis.cluster
 
 import com.redis._
 import com.redis.serialization._
+import org.apache.commons.pool.ObjectPool
 
 abstract class RedisShards(val hosts: List[ClusterNode]) extends RedisCommand {
 
@@ -17,7 +18,7 @@ abstract class RedisShards(val hosts: List[ClusterNode]) extends RedisCommand {
   val POINTS_PER_SERVER = 160 // default in libmemcached
 
   // instantiating a cluster will automatically connect participating nodes to the server
-  private var clients = hosts.map { h => (h.nodename, new IdentifiableRedisClientPool(h)) } toMap
+  private var clients = hosts.map { h => (h.nodename, new IdentifiableRedisClientPool(h)(h.optionPool)) } toMap
 
   // the hash ring will instantiate with the nodes up and added
   val hr = HashRing[String](hosts.map(_.nodename), POINTS_PER_SERVER)
@@ -35,7 +36,7 @@ abstract class RedisShards(val hosts: List[ClusterNode]) extends RedisCommand {
 
   // add a server
   def addServer(server: ClusterNode) = {
-    clients = clients + (server.nodename -> new IdentifiableRedisClientPool(server))
+    clients = clients + (server.nodename -> new IdentifiableRedisClientPool(server)(server.optionPool))
     hr addNode server.nodename
   }
 
@@ -45,7 +46,7 @@ abstract class RedisShards(val hosts: List[ClusterNode]) extends RedisCommand {
       clients(server.nodename).close
       clients = clients - server.nodename
     }
-    clients = clients + (server.nodename -> new IdentifiableRedisClientPool(server))
+    clients = clients + (server.nodename -> new IdentifiableRedisClientPool(server)(server.optionPool))
   }
   
   //remove a server
