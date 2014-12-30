@@ -1,7 +1,5 @@
 package com.redis
 
-import nf.fr.eraasoft.pool.impl.AbstractPool
-import nf.fr.eraasoft.pool.{PoolableObject, PoolSettings}
 import org.apache.commons.pool._
 import org.apache.commons.pool.impl._
 import com.redis.cluster.ClusterNode
@@ -24,7 +22,7 @@ class RedisClientFactory(val host: String, val port: Int, val database: Int = 0,
   def passivateObject(rc: RedisClient): Unit = {}
   def validateObject(rc: RedisClient) = rc.connected == true
 
-  // noop: it should be connected already                                                     org.apache.commons.pool.ObjectPool<T>
+  // noop: it should be connected already
   def activateObject(rc: RedisClient): Unit = {}
 }
 
