@@ -2,6 +2,7 @@ package com.redis.cluster
 
 import com.redis._
 import com.redis.serialization._
+import org.apache.commons.pool.ObjectPool
 
 /**
  * Consistent hashing distributes keys across multiple servers. But there are situations
@@ -53,8 +54,10 @@ object NoOpKeyTag extends KeyTag {
  * a level of abstraction for each node decoupling it from the address. A node is now identified
  * by a name, so functions like <tt>replaceServer</tt> works seamlessly.
  */
-case class ClusterNode(nodename: String, host: String, port: Int, database: Int = 0, maxIdle: Int = 8, secret: Option[Any] = None, timeout : Int = 0){
+case class ClusterNode(nodename: String, host: String, port: Int, database: Int = 0, maxIdle: Int = 8, secret: Option[Any] = None, timeout : Int = 0)
+                      (implicit val optionPool : Option[ObjectPool[RedisClient]] = None) {
   override def toString = nodename
+
 }
 
 abstract class RedisCluster(hosts: ClusterNode*) extends RedisCommand {
@@ -72,7 +75,7 @@ abstract class RedisCluster(hosts: ClusterNode*) extends RedisCommand {
 
   // instantiating a cluster will automatically connect participating nodes to the server
   val clients = hosts.toList.map {h => 
-    new IdentifiableRedisClientPool(h)
+    new IdentifiableRedisClientPool(h)(h.optionPool)
   }
 
   // the hash ring will instantiate with the nodes up and added
@@ -90,7 +93,7 @@ abstract class RedisCluster(hosts: ClusterNode*) extends RedisCommand {
 
   // add a server
   def addServer(server: ClusterNode) = {
-    hr addNode new IdentifiableRedisClientPool(server)
+    hr addNode new IdentifiableRedisClientPool(server)(server.optionPool)
   }
 
   /**
@@ -104,7 +107,7 @@ abstract class RedisCluster(hosts: ClusterNode*) extends RedisCommand {
   // replace a server
   // very useful when you want to replace a server in test mode to one in production mode
   def replaceServer(server: ClusterNode) = {
-    hr replaceNode new IdentifiableRedisClientPool(server) match {
+    hr replaceNode new IdentifiableRedisClientPool(server)(server.optionPool) match {
         case Some(clientPool) => clientPool.close
         case None => 
     }
