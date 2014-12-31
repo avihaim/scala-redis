@@ -57,7 +57,7 @@ object NoOpKeyTag extends KeyTag {
 case class ClusterNode(nodename: String, host: String, port: Int, database: Int = 0, maxIdle: Int = 8, secret: Option[Any] = None, timeout : Int = 0)
                       (implicit val optionPool : Option[ObjectPool[RedisClient]] = None) {
   override def toString = nodename
-
+  def getOptionPool = optionPool
 }
 
 abstract class RedisCluster(hosts: ClusterNode*) extends RedisCommand {

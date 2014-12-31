@@ -12,9 +12,13 @@ import org.apache.commons.pool.PoolableObjectFactory
  * Time: 11:32 AM
  */
 class ConcurrentObjectPool[T](factory: PoolableObjectFactory[T],
-                              maxIdle : Int) extends org.apache.commons.pool.ObjectPool[T] {
+                              maxIdle : Int, val minSize : Int = 4) extends org.apache.commons.pool.ObjectPool[T] {
   val queue : util.Queue[T]= new ConcurrentLinkedQueue[T]
   val totalSize: AtomicInteger = new AtomicInteger(0)
+
+  for (i <-0 to minSize ) {
+    addObject()
+  }
 
   override def borrowObject(): T = {
     var t = queue.poll
@@ -36,7 +40,6 @@ class ConcurrentObjectPool[T](factory: PoolableObjectFactory[T],
       val t: T = queue.poll
       invalidateObject(t)
     }
-
     totalSize.set(0)
   }
 
@@ -56,15 +59,17 @@ class ConcurrentObjectPool[T](factory: PoolableObjectFactory[T],
   }
 
   override def addObject(): Unit = {
-
+    queue.add(factory.makeObject())
   }
 
   override def returnObject(p1: T): Unit = {
     if (p1 == null) return
 
-    if ( factory.validateObject(p1)) {
+    if (factory.validateObject(p1) ) { //&& totalSize.incrementAndGet() < maxIdle
       factory.passivateObject(p1)
       queue.add(p1)
+    } else {
+      invalidateObject(p1)
     }
 
   }
