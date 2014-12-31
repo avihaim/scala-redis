@@ -46,7 +46,6 @@ class ConcurrentObjectPool[T](factory: PoolableObjectFactory[T],
       invalidateObject(t)
       t = queue.poll
     }
-
     totalSize.set(0)
   }
 
