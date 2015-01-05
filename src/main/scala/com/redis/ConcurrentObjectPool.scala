@@ -16,8 +16,10 @@ class ConcurrentObjectPool[T](factory: PoolableObjectFactory[T],
   val queue : util.Queue[T]= new ConcurrentLinkedQueue[T]
   val totalSize: AtomicInteger = new AtomicInteger(0)
 
-  for (i <-0 to minSize ) {
-    addObject()
+  if(minSize > 0) {
+    for (i <- 0 to minSize) {
+      addObject()
+    }
   }
 
   override def borrowObject(): T = {
