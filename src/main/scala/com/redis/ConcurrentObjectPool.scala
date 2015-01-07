@@ -66,6 +66,7 @@ class ConcurrentObjectPool[T](factory: PoolableObjectFactory[T],
   }
 
   override def addObject(): Unit = {
+    totalSize.incrementAndGet
     queue.add(factory.makeObject())
   }
 
