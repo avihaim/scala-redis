@@ -1,0 +1,671 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0" is_locked="false">
+    <option name="myName" value="Project Default" />
+    <option name="myLocal" value="false" />
+    <inspection_tool class="AbstractClassExtendsConcreteClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AbstractMethodCallInConstructor" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AbstractMethodOverridesConcreteMethod" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AbstractValueInTrait" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AccessToNonThreadSafeStaticFieldFromInstance" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="nonThreadSafeClasses">
+        <value />
+      </option>
+      <option name="nonThreadSafeTypes" value="" />
+    </inspection_tool>
+    <inspection_tool class="AccessToStaticFieldLockedOnInstance" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AmbiguousFieldAccess" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AmbiguousMethodCall" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AnnotationNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_regex" value="[A-Z][A-Za-z\d]*" />
+      <option name="m_minLength" value="8" />
+      <option name="m_maxLength" value="64" />
+    </inspection_tool>
+    <inspection_tool class="AnonymousClassComplexity" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_limit" value="3" />
+    </inspection_tool>
+    <inspection_tool class="AnonymousClassMethodCount" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_limit" value="1" />
+    </inspection_tool>
+    <inspection_tool class="AnonymousClassVariableHidesContainingMethodVariable" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ArchaicSystemPropertyAccess" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ArrayEquality" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ArraySizeCall" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ArraysAsListWithZeroOrOneArgument" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AssertEqualsCalledOnArray" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AssertEqualsMayBeAssertSame" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AssertsWithoutMessages" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AssignmentToCatchBlockParameter" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AssignmentToCollectionFieldFromParameter" enabled="$CONSOLE_ENABLED$" level="INFO" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignorePrivateMethods" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="AssignmentToDateFieldFromParameter" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignorePrivateMethods" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="AssignmentToForLoopParameter" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_checkForeachParameters" value="false" />
+    </inspection_tool>
+    <inspection_tool class="AssignmentToMethodParameter" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreTransformationOfOriginalParameter" value="false" />
+    </inspection_tool>
+    <inspection_tool class="AssignmentToNull" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AssignmentToStaticFieldFromInstanceMethod" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AssignmentUsedAsCondition" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AwaitNotInLoop" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="AwaitWithoutCorrespondingSignal" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="BadOddness" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="BeforeClassOrAfterClassIsPublicStaticVoidNoArg" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="BeforeOrAfterIsPublicVoidNoArg" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="BigDecimalEquals" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="BooleanVariableAlwaysNegated" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="BusyWait" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CStyleArrayDeclaration" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CachedNumberConstructorCall" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CallToNativeMethodWhileLocked" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CallToStringConcatCanBeReplacedByOperator" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CastConflictsWithInstanceof" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CastThatLosesPrecision" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreIntegerCharCasts" value="false" />
+    </inspection_tool>
+    <inspection_tool class="CastToConcreteClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreAbstractClasses" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="CastToIncompatibleInterface" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ChainedEquality" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CharUsedInArithmeticContext" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ClassComplexity" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_limit" value="80" />
+    </inspection_tool>
+    <inspection_tool class="ClassCoupling" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_includeJavaClasses" value="false" />
+      <option name="m_includeLibraryClasses" value="false" />
+      <option name="m_limit" value="15" />
+    </inspection_tool>
+    <inspection_tool class="ClassEscapesItsScope" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ClassInTopLevelPackage" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ClassInheritanceDepth" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_limit" value="4" />
+    </inspection_tool>
+    <inspection_tool class="ClassMayBeInterface" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ClassNameDiffersFromFileName" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ClassNameSameAsAncestorName" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ClassNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_regex" value="[A-Z][A-Za-z\d]*" />
+      <option name="m_minLength" value="3" />
+      <option name="m_maxLength" value="64" />
+    </inspection_tool>
+    <inspection_tool class="ClassNestingDepth" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_limit" value="1" />
+    </inspection_tool>
+    <inspection_tool class="ClassNewInstance" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ClassReferencesSubclass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ClassWithMultipleLoggers" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="loggerNamesString" value="java.util.logging.Logger,org.slf4j.Logger,org.apache.commons.logging.Log,org.apache.log4j.Logger" />
+    </inspection_tool>
+    <inspection_tool class="CloneCallsConstructors" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CloneInNonCloneableClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CloneableImplementsClone" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_ignoreCloneableDueToInheritance" value="false" />
+    </inspection_tool>
+    <inspection_tool class="CollectionAddedToSelf" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CollectionContainsUrl" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CollectionsFieldAccessReplaceableByMethodCall" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CollectionsMustHaveInitialCapacity" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ComparableImplementedButEqualsNotOverridden" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CompareToUsesNonFinalVariable" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ComparisonOfShortAndChar" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ComparisonToNaN" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ConditionSignal" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ConfusingElse" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="reportWhenNoStatementFollow" value="false" />
+    </inspection_tool>
+    <inspection_tool class="ConfusingFloatingPointLiteral" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ConfusingMainMethod" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ConfusingOctalEscape" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ConstantAssertCondition" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ConstantDeclaredInAbstractClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ConstantDeclaredInInterface" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ConstantJUnitAssertArgument" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ConstantMathCall" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ConstantNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="onlyCheckImmutables" value="false" />
+      <option name="m_regex" value="[A-Z_\d]*" />
+      <option name="m_minLength" value="3" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="ConstantOnLHSOfComparison" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ConstantStringIntern" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ConstantValueVariableUse" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ConstructorCount" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreDeprecatedConstructors" value="false" />
+      <option name="m_limit" value="5" />
+    </inspection_tool>
+    <inspection_tool class="ContinueStatementWithLabel" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ControlFlowStatementWithoutBraces" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CovariantCompareTo" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CovariantEquals" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="CyclomaticComplexity" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_limit" value="10" />
+    </inspection_tool>
+    <inspection_tool class="DeclareCollectionAsInterface" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreLocalVariables" value="false" />
+      <option name="ignorePrivateMethodsAndFields" value="false" />
+    </inspection_tool>
+    <inspection_tool class="DefaultNotLastCaseInSwitch" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="DivideByZero" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="DollarSignInName" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="DoubleCheckedLocking" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreOnVolatileVariables" value="false" />
+    </inspection_tool>
+    <inspection_tool class="DoubleLiteralMayBeFloatLiteral" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="DynamicRegexReplaceableByCompiledPattern" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="EmptyInitializer" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="EmptySynchronizedStatement" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="EnumSwitchStatementWhichMissesCases" enabled="$CONSOLE_ENABLED$" level="ERROR" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreSwitchStatementsWithDefault" value="false" />
+    </inspection_tool>
+    <inspection_tool class="EnumeratedClassNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_regex" value="[A-Z][A-Za-z\d]*" />
+      <option name="m_minLength" value="5" />
+      <option name="m_maxLength" value="64" />
+    </inspection_tool>
+    <inspection_tool class="EnumeratedConstantNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_regex" value="[A-Z][A-Za-z\d_]*" />
+      <option name="m_minLength" value="2" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="EnumerationCanBeIteration" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="EqualsAndHashcode" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="EqualsCalledOnEnumConstant" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="EqualsHashCodeCalledOnUrl" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ErrorRethrown" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ExceptionNameDoesntEndWithException" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ExpectedExceptionNeverThrown" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ExtendsConcreteCollection" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ExtendsThread" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ExtendsUtilityClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="FallthruInSwitchStatement" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="FieldAccessedSynchronizedAndUnsynchronized" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="countGettersAndSetters" value="false" />
+    </inspection_tool>
+    <inspection_tool class="FieldCount" enabled="$CONSOLE_ENABLED$" level="INFO" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_countConstantFields" value="false" />
+      <option name="m_considerStaticFinalFieldsConstant" value="false" />
+      <option name="myCountEnumConstants" value="false" />
+      <option name="m_limit" value="15" />
+    </inspection_tool>
+    <inspection_tool class="FieldHidesSuperclassField" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_ignoreInvisibleFields" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="FieldMayBeFinal" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="FieldMayBeStatic" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="Finalize" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreTrivialFinalizers" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="FinalizeNotProtected" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="FloatingPointEquality" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ForLoopThatDoesntUseLoopVariable" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="IfStatementWithTooManyBranches" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_limit" value="3" />
+    </inspection_tool>
+    <inspection_tool class="IgnoredJUnitTest" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ImplicitNumericConversion" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreWideningConversions" value="$CONSOLE_ENABLED$" />
+      <option name="ignoreCharConversions" value="false" />
+      <option name="ignoreConstantConversions" value="false" />
+    </inspection_tool>
+    <inspection_tool class="InconsistentLanguageLevel" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="IncrementDecrementUsedAsExpression" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="InnerClassMayBeStatic" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="InnerClassVariableHidesOuterClassVariable" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_ignoreInvisibleFields" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="InstanceMethodNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="3" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="InstanceVariableInitialization" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_ignorePrimitives" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="InstanceVariableNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="2" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="InstanceVariableUninitializedUse" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_ignorePrimitives" value="false" />
+      <option name="annotationNamesString" value="" />
+    </inspection_tool>
+    <inspection_tool class="InstanceofChain" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreInstanceofOnLibraryClasses" value="false" />
+    </inspection_tool>
+    <inspection_tool class="InstanceofIncompatibleInterface" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="InstanceofInterfaces" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="InstanceofThis" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="InstantiationOfUtilityClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="IntLiteralMayBeLongLiteral" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="IntegerDivisionInFloatingPointContext" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="IntegerMultiplicationImplicitCastToLong" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreNonOverflowingCompileTimeConstants" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="InterfaceNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_regex" value="[A-Z][A-Za-z\d]*" />
+      <option name="m_minLength" value="5" />
+      <option name="m_maxLength" value="64" />
+    </inspection_tool>
+    <inspection_tool class="IteratorHasNextCallsIteratorNext" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="IteratorNextDoesNotThrowNoSuchElementException" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="JUnit3StyleTestMethodInJUnit4Class" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="JUnitAbstractTestClassNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_regex" value="[A-Z][A-Za-z\d]*TestCase" />
+      <option name="m_minLength" value="12" />
+      <option name="m_maxLength" value="64" />
+    </inspection_tool>
+    <inspection_tool class="JUnitTestClassNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_regex" value="[A-Z][A-Za-z\d]*Test" />
+      <option name="m_minLength" value="8" />
+      <option name="m_maxLength" value="64" />
+    </inspection_tool>
+    <inspection_tool class="JavaLangReflect" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="KeySetIterationMayUseEntrySet" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="LegacyStringFormatting" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="LengthOneStringInIndexOf" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="LengthOneStringsInConcatenation" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="LimitedScopeInnerClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ListIndexOfReplaceableByContains" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ListenerMayUseAdapter" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="checkForEmptyMethods" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="LiteralAsArgToStringEquals" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="LocalCanBeFinal" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="REPORT_VARIABLES" value="$CONSOLE_ENABLED$" />
+      <option name="REPORT_PARAMETERS" value="false" />
+    </inspection_tool>
+    <inspection_tool class="LocalVariableHidingMemberVariable" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_ignoreInvisibleFields" value="$CONSOLE_ENABLED$" />
+      <option name="m_ignoreStaticMethods" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="LocalVariableNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_ignoreForLoopParameters" value="false" />
+      <option name="m_ignoreCatchParameters" value="false" />
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="1" />
+      <option name="m_maxLength" value="25" />
+    </inspection_tool>
+    <inspection_tool class="LoggerInitializedWithForeignClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="loggerClassName" value="org.apache.log4j.Logger,org.slf4j.LoggerFactory,org.apache.commons.logging.LogFactory,java.util.logging.Logger" />
+      <option name="loggerFactoryMethodName" value="getLogger,getLogger,getLog,getLogger" />
+    </inspection_tool>
+    <inspection_tool class="LoggingConditionDisagreesWithLogStatement" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="LongLiteralsEndingWithLowercaseL" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="LoopWithImplicitTerminationCondition" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MagicNumber" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreInTestCode" value="$CONSOLE_ENABLED$" />
+      <option name="ignoreInitialCapacity" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="MapReplaceableByEnumMap" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MethodCanBeVariableArityMethod" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MethodCount" enabled="$CONSOLE_ENABLED$" level="INFO" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_limit" value="20" />
+      <option name="ignoreGettersAndSetters" value="$CONSOLE_ENABLED$" />
+      <option name="ignoreOverridingMethods" value="false" />
+    </inspection_tool>
+    <inspection_tool class="MethodCoupling" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_includeJavaClasses" value="false" />
+      <option name="m_includeLibraryClasses" value="false" />
+      <option name="m_limit" value="10" />
+    </inspection_tool>
+    <inspection_tool class="MethodMayBeStatic" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_onlyPrivateOrFinal" value="false" />
+      <option name="m_ignoreEmptyMethods" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="MethodMayBeSynchronized" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MethodNameSameAsParentName" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MethodNamesDifferOnlyByCase" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MethodOnlyUsedFromInnerClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreMethodsAccessedFromAnonymousClass" value="false" />
+      <option name="ignoreStaticMethodsFromNonStaticInnerClass" value="false" />
+      <option name="onlyReportStaticMethods" value="false" />
+    </inspection_tool>
+    <inspection_tool class="MethodOverloadsParentMethod" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MethodOverridesPackageLocalMethod" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MethodOverridesPrivateMethod" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MethodOverridesStaticMethod" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MisorderedAssertEqualsParameters" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MissingDeprecatedAnnotation" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MissingOverrideAnnotation" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreObjectMethods" value="$CONSOLE_ENABLED$" />
+      <option name="ignoreAnonymousClassMethods" value="false" />
+    </inspection_tool>
+    <inspection_tool class="MissortedModifiers" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_requireAnnotationsFirst" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="MisspelledCompareTo" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MisspelledEquals" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MisspelledHashcode" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MisspelledSetUp" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MisspelledTearDown" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MisspelledToString" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MultipleDeclaration" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreForLoopDeclarations" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="MultipleExceptionsDeclaredOnTestMethod" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MultipleReturnPointsPerMethod" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreGuardClauses" value="false" />
+      <option name="ignoreEqualsMethod" value="$CONSOLE_ENABLED$" />
+      <option name="m_limit" value="3" />
+    </inspection_tool>
+    <inspection_tool class="MultipleTopLevelClassesInFile" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="MultipleTypedDeclaration" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NakedNotify" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NegatedEqualityExpression" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NestedAssignment" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NestedSynchronizedStatement" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NestingDepth" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_limit" value="5" />
+    </inspection_tool>
+    <inspection_tool class="NewExceptionWithoutArguments" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NoTailRecursionAnnotation" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NonAtomicOperationOnVolatileField" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NonCommentSourceStatements" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_limit" value="30" />
+    </inspection_tool>
+    <inspection_tool class="NonExceptionNameEndsWithException" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NonFinalStaticVariableUsedInClassInitialization" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NonFinalUtilityClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NonProtectedConstructorInAbstractClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_ignoreNonPublicClasses" value="false" />
+    </inspection_tool>
+    <inspection_tool class="NonReproducibleMathCall" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NonShortCircuitBoolean" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NonStaticFinalLogger" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="loggerClassName" value="" />
+    </inspection_tool>
+    <inspection_tool class="NonSynchronizedMethodOverridesSynchronizedMethod" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NonThreadSafeLazyInitialization" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NoopMethodInAbstractClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NotifyCalledOnCondition" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NotifyNotInSynchronizedContext" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NotifyWithoutCorrespondingWait" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="NullThrown" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ObjectEquality" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_ignoreEnums" value="$CONSOLE_ENABLED$" />
+      <option name="m_ignoreClassObjects" value="false" />
+      <option name="m_ignorePrivateConstructors" value="false" />
+    </inspection_tool>
+    <inspection_tool class="ObjectNotify" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ObjectToString" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ObsoleteCollection" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreRequiredObsoleteCollectionTypes" value="false" />
+    </inspection_tool>
+    <inspection_tool class="OctalAndDecimalIntegersMixed" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="OverloadedMethodsWithSameNumberOfParameters" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreInconvertibleTypes" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="OverloadedVarargsMethod" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="OverlyComplexArithmeticExpression" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_limit" value="6" />
+    </inspection_tool>
+    <inspection_tool class="OverlyComplexBooleanExpression" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_limit" value="3" />
+      <option name="m_ignorePureConjunctionsDisjunctions" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="OverlyStrongTypeCast" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreInMatchingInstanceof" value="false" />
+    </inspection_tool>
+    <inspection_tool class="OverridableMethodCallDuringObjectConstruction" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="OverriddenMethodCallDuringObjectConstruction" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="PackageNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_regex" value="[a-z]*" />
+      <option name="m_minLength" value="3" />
+      <option name="m_maxLength" value="16" />
+    </inspection_tool>
+    <inspection_tool class="PackageVisibleField" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ParameterHidingMemberVariable" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="m_ignoreInvisibleFields" value="$CONSOLE_ENABLED$" />
+      <option name="m_ignoreStaticMethodParametersHidingInstanceFields" value="false" />
+      <option name="m_ignoreForConstructors" value="$CONSOLE_ENABLED$" />
+      <option name="m_ignoreForPropertySetters" value="$CONSOLE_ENABLED$" />
+      <option name="m_ignoreForAbstractMethods" value="false" />
+    </inspection_tool>
+    <inspection_tool class="ParameterNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="1" />
+      <option name="m_maxLength" value="35" />
+    </inspection_tool>
+    <inspection_tool class="ParameterizedParametersStaticCollection" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ParametersPerConstructor" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ParametersPerMethod" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_limit" value="5" />
+    </inspection_tool>
+    <inspection_tool class="PointlessIndexOfComparison" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="PointlessNullCheck" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ProtectedField" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ProtectedInnerClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreEnums" value="false" />
+      <option name="ignoreInterfaces" value="false" />
+    </inspection_tool>
+    <inspection_tool class="ProtectedMemberInFinalClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="PublicConstructorInNonPublicClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="PublicField" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreEnums" value="false" />
+      <option name="ignorableAnnotations">
+        <value />
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PublicFieldAccessedInSynchronizedContext" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="QuestionableName" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="nameString" value="aa,abc,bad,bar,bar2,baz,baz1,baz2,baz3,bb,blah,bogus,bool,cc,dd,defau1t,dummy,dummy2,ee,fa1se,ff,foo,foo1,foo2,foo3,foobar,four,fred,fred1,fred2,gg,hh,hello,hello1,hello2,hello3,ii,nu11,one,silly,silly2,string,two,that,then,three,whi1e,var" />
+    </inspection_tool>
+    <inspection_tool class="RandomDoubleForRandomInteger" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="RawUseOfParameterizedType" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="RedundantFieldInitialization" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="RedundantImplements" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreSerializable" value="false" />
+      <option name="ignoreCloneable" value="false" />
+    </inspection_tool>
+    <inspection_tool class="RedundantStringFormatCall" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="RelativeImport" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ReplaceAllDot" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ReplaceAssignmentWithOperatorAssignment" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreLazyOperators" value="$CONSOLE_ENABLED$" />
+      <option name="ignoreObscureOperators" value="false" />
+    </inspection_tool>
+    <inspection_tool class="ResultOfObjectAllocationIgnored" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ResultSetIndexZero" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ReturnNull" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_reportObjectMethods" value="$CONSOLE_ENABLED$" />
+      <option name="m_reportArrayMethods" value="$CONSOLE_ENABLED$" />
+      <option name="m_reportCollectionMethods" value="$CONSOLE_ENABLED$" />
+      <option name="m_ignorePrivateMethods" value="false" />
+    </inspection_tool>
+    <inspection_tool class="ReturnOfDateField" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SafeLock" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SetReplaceableByEnumSet" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SetupCallsSuperSetup" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SetupIsPublicVoidNoArg" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SignalWithoutCorrespondingAwait" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SimplifiableAnnotation" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SimplifiableEqualsExpression" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SimplifiableJUnitAssertion" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SizeReplaceableByIsEmpty" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SleepWhileHoldingLock" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="StandardVariableNames" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="StaticCallOnSubclass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="StaticCollection" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_ignoreWeakCollections" value="false" />
+    </inspection_tool>
+    <inspection_tool class="StaticFieldReferenceOnSubclass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="StaticMethodNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="4" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="StaticMethodOnlyUsedInOneClass" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="StaticNonFinalField" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="StaticSuite" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="StaticVariableInitialization" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_ignorePrimitives" value="false" />
+    </inspection_tool>
+    <inspection_tool class="StaticVariableNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="checkMutableFinals" value="false" />
+      <option name="m_regex" value="s_[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="5" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="StaticVariableUninitializedUse" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_ignorePrimitives" value="false" />
+    </inspection_tool>
+    <inspection_tool class="StringBufferField" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="StringBufferMustHaveInitialCapacity" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="StringBufferToStringInConcatenation" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="StringConcatenationArgumentToLogCall" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="StringConcatenationInFormatCall" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="StringConcatenationInMessageFormatCall" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="StringConcatenationMissingWhitespace" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="StringEqualsEmptyString" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="StringReplaceableByStringBuffer" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="onlyWarnOnLoop" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="SubstringZero" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SubtractionInCompareTo" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SuppressionAnnotation" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SuspiciousArrayCast" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SuspiciousIndentAfterControlStatement" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SuspiciousInferredType" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SwitchStatementWithConfusingDeclaration" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SynchronizationOnStaticField" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SynchronizeOnLock" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SynchronizeOnThis" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SynchronizedMethod" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_includeNativeMethods" value="$CONSOLE_ENABLED$" />
+      <option name="ignoreSynchronizedSuperMethods" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="SynchronizedOnLiteralObject" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SystemGC" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SystemOutErr" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="SystemRunFinalizersOnExit" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="TailRecursion" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="TeardownCallsSuperTeardown" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="TeardownIsPublicVoidNoArg" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="TestCaseInProductCode" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="TestCaseWithConstructor" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="TestCaseWithNoTestMethods" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreSupers" value="false" />
+    </inspection_tool>
+    <inspection_tool class="TestMethodInProductCode" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="TestMethodIsPublicVoidNoArg" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="TestMethodWithoutAssertion" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="assertionMethods" value="org.junit.Assert,assert.*|fail.*,junit.framework.Assert,assert.*|fail.*,org.mockito.Mockito,verify.*,org.junit.rules.ExpectedException,expect.*" />
+      <option name="assertKeywordIsAssertion" value="false" />
+    </inspection_tool>
+    <inspection_tool class="TestOnlyProblems" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="TextLabelInSwitchStatement" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ThisEscapedInConstructor" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ThreadDumpStack" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ThreadLocalNotStaticFinal" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ThreadPriority" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ThreadRun" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ThreadStartInConstruction" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ThreadStopSuspendResume" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ThreadWithDefaultRunMethod" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ThreadYield" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="ThrowablePrintStackTrace" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="TodoComment" enabled="$CONSOLE_ENABLED$" level="INFO" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="TooBroadCatch" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="TooBroadScope" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_allowConstructorAsInitializer" value="false" />
+      <option name="m_onlyLookAtBlocks" value="false" />
+    </inspection_tool>
+    <inspection_tool class="TooBroadThrows" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="TrivialStringConcatenation" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="TypeMayBeWeakened" enabled="false" level="INFO" enabled_by_default="false">
+      <option name="useRighthandTypeAsWeakestTypeInAssignments" value="false" />
+      <option name="useParameterizedTypeForCollectionMethods" value="$CONSOLE_ENABLED$" />
+      <option name="doNotWeakenToJavaLangObject" value="$CONSOLE_ENABLED$" />
+      <option name="onlyWeakentoInterface" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="TypeParameterNamingConvention" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_regex" value="[A-Z][A-Za-z\d]*" />
+      <option name="m_minLength" value="1" />
+      <option name="m_maxLength" value="20" />
+    </inspection_tool>
+    <inspection_tool class="UnaryPlus" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UnconditionalWait" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UnconstructableTestCase" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UnnecessarilyQualifiedInnerClassAccess" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreReferencesNeedingImport" value="false" />
+    </inspection_tool>
+    <inspection_tool class="UnnecessarilyQualifiedStaticUsage" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_ignoreStaticFieldAccesses" value="false" />
+      <option name="m_ignoreStaticMethodCalls" value="false" />
+      <option name="m_ignoreStaticAccessFromStaticContext" value="false" />
+    </inspection_tool>
+    <inspection_tool class="UnnecessarilyQualifiedStaticallyImportedElement" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UnnecessaryBlockStatement" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreSwitchBranches" value="false" />
+    </inspection_tool>
+    <inspection_tool class="UnnecessaryCallToStringValueOf" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UnnecessaryConstantArrayCreationExpression" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UnnecessaryConstructor" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UnnecessaryDefault" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UnnecessaryEnumModifier" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UnnecessaryExplicitNumericCast" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UnnecessaryFullyQualifiedName" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="m_ignoreJavadoc" value="false" />
+    </inspection_tool>
+    <inspection_tool class="UnnecessaryInterfaceModifier" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UnnecessaryModuleDependencyInspection" enabled="false" level="INFO" enabled_by_default="false" />
+    <inspection_tool class="UnnecessaryQualifierForThis" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UnnecessarySuperConstructor" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UnnecessarySuperQualifier" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UnnecessaryUnaryMinus" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UnpredictableBigDecimalConstructorCall" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreReferences" value="$CONSOLE_ENABLED$" />
+      <option name="ignoreComplexLiterals" value="false" />
+    </inspection_tool>
+    <inspection_tool class="UnqualifiedStaticUsage" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="m_ignoreStaticFieldAccesses" value="false" />
+      <option name="m_ignoreStaticMethodCalls" value="false" />
+      <option name="m_ignoreStaticAccessFromStaticContext" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="UnusedDeclaration" enabled="$CONSOLE_ENABLED$" level="INFO" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ADD_MAINS_TO_ENTRIES" value="$CONSOLE_ENABLED$" />
+      <option name="ADD_APPLET_TO_ENTRIES" value="$CONSOLE_ENABLED$" />
+      <option name="ADD_SERVLET_TO_ENTRIES" value="$CONSOLE_ENABLED$" />
+      <option name="ADD_NONJAVA_TO_ENTRIES" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="UpperCaseFieldNameNotConstant" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UseOfAnotherObjectsPrivateField" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoreSameClass" value="$CONSOLE_ENABLED$" />
+      <option name="ignoreEquals" value="$CONSOLE_ENABLED$" />
+    </inspection_tool>
+    <inspection_tool class="UseOfObsoleteAssert" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UseOfPropertiesAsHashtable" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UtilityClassWithPublicConstructor" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="UtilityClassWithoutPrivateConstructor" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignorableAnnotations">
+        <value />
+      </option>
+      <option name="ignoreClassesWithOnlyMain" value="false" />
+    </inspection_tool>
+    <inspection_tool class="VariableNotUsedInsideIf" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="VolatileArrayField" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="VolatileLongOrDoubleField" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="WaitCalledOnCondition" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="WaitNotInLoop" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="WaitNotInSynchronizedContext" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="WaitOrAwaitWithoutTimeout" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="WaitWhileHoldingTwoLocks" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="WaitWithoutCorrespondingNotify" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+    <inspection_tool class="WeakerAccess" enabled="$CONSOLE_ENABLED$" level="INFO" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="SUGGEST_PACKAGE_LOCAL_FOR_MEMBERS" value="$CONSOLE_ENABLED$" />
+      <option name="SUGGEST_PACKAGE_LOCAL_FOR_TOP_CLASSES" value="$CONSOLE_ENABLED$" />
+      <option name="SUGGEST_PRIVATE_FOR_INNERS" value="false" />
+    </inspection_tool>
+    <inspection_tool class="WhileLoopSpinsOnField" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$">
+      <option name="ignoreNonEmtpyLoops" value="false" />
+    </inspection_tool>
+    <inspection_tool class="ZeroLengthArrayInitialization" enabled="$CONSOLE_ENABLED$" level="WARNING" enabled_by_default="$CONSOLE_ENABLED$" />
+  </profile>
+</component>
