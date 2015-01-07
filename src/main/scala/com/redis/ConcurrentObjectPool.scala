@@ -15,6 +15,7 @@ class ConcurrentObjectPool[T](factory: PoolableObjectFactory[T],
                               maxIdle : Int, val minSize : Int = 4) extends org.apache.commons.pool.ObjectPool[T] {
   val queue : util.Queue[T]= new ConcurrentLinkedQueue[T]
   val totalSize: AtomicInteger = new AtomicInteger(0)
+  val idleSize: AtomicInteger = new AtomicInteger(0)
 
   if(minSize > 0) {
     for (i <- 0 to minSize) {
@@ -28,6 +29,8 @@ class ConcurrentObjectPool[T](factory: PoolableObjectFactory[T],
     if (t == null) {
       t = factory.makeObject()
       totalSize.incrementAndGet
+    } else {
+      idleSize.decrementAndGet()
     }
     factory.activateObject(t)
     t
@@ -38,10 +41,12 @@ class ConcurrentObjectPool[T](factory: PoolableObjectFactory[T],
   }
 
   override def clear(): Unit = {
-    while (queue.size > 0) {
-      val t: T = queue.poll
+    var t: T = queue.poll
+    while (t != null) {
       invalidateObject(t)
+      t = queue.poll
     }
+
     totalSize.set(0)
   }
 
@@ -57,7 +62,7 @@ class ConcurrentObjectPool[T](factory: PoolableObjectFactory[T],
   }
 
   override def getNumIdle: Int = {
-    maxIdle
+    idleSize.get()
   }
 
   override def addObject(): Unit = {
@@ -67,9 +72,15 @@ class ConcurrentObjectPool[T](factory: PoolableObjectFactory[T],
   override def returnObject(p1: T): Unit = {
     if (p1 == null) return
 
-    if (factory.validateObject(p1) ) { //&& totalSize.incrementAndGet() < maxIdle
+    if (factory.validateObject(p1) ) {
       factory.passivateObject(p1)
-      queue.add(p1)
+
+      if(idleSize.incrementAndGet() <= maxIdle) {
+        queue.add(p1)
+      } else {
+        idleSize.decrementAndGet()
+        invalidateObject(p1)
+      }
     } else {
       invalidateObject(p1)
     }
