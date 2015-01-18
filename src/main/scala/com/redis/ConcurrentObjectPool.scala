@@ -37,7 +37,7 @@ class ConcurrentObjectPool[T](factory: PoolableObjectFactory[T],
   }
 
   override def getNumActive: Int = {
-    totalSize.get - queue.size
+    totalSize.get - idleSize.get()
   }
 
   override def clear(): Unit = {
@@ -66,7 +66,7 @@ class ConcurrentObjectPool[T](factory: PoolableObjectFactory[T],
   }
 
   override def addObject(): Unit = {
-    totalSize.incrementAndGet
+    idleSize.incrementAndGet()
     queue.add(factory.makeObject())
   }
 
